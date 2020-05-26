@@ -92,8 +92,8 @@
 > score = []
 > for i in range(10):
 >     score.append(eval(input()))
-> score.remove(max(score))
-> score.remove(min(score))
+> score.remove(max(score)) #從list中刪除最大數
+> score.remove(min(score)) #從list中刪除最小數
 > print(sum(score))
 > print("%.2f" % (sum(score)/8))
 > ```
@@ -135,7 +135,7 @@
 > **Example Input:`97`,`64`,`85`,`94`,`72`;`65`,`91`,`90`,`85`,`82`;`99`,`74`,`85`,`67`,`99`**  
 > ```py
 > info = ["The 1st student:", "The 2nd student:", "The 3rd student:"]
-> score = [[], [], []]
+> score = [[], [], []] #建立儲存三個學生資料的維度
 > for i in range(3):
 >     print(info[i])
 >     for j in range(5):
@@ -191,7 +191,7 @@
 > ```py
 > m1 = [0, 0], [0, 0]
 > m2 = [0, 0], [0, 0]
-> 
+> #這題看懂輸出邏輯比較重要 說明太簡扼
 > print("Enter matrix 1:")
 > for i in range(2):
 >       for j in range(2):
@@ -249,13 +249,13 @@
 **Tips. 先顯示當前天數後輸入(輸出:Day 1: 然後輸入資料,依序進行)**  
 > **Example Input:`29`,`28.4`,`27.7`;`29.8`,`29`,`30`;`32.1`,`34`,`33.3`;`35.10`,`30`,`28`**  
 > ```py
-> temperature = []
+> temperature = [] #這題用一維陣列來做就夠了
 > for i in range(4):
 >     print("Week %d:" % (i+1))
 >     for j in range(3):
 >         temperature.append(eval(input("Day %d:" % (j+1))))
 > print("Average: %.2f" % (sum(temperature)/12))
-> print("Highest: %g" % max(temperature))
+> print("Highest: %g" % max(temperature)) #%g輸出可以忽視結尾0的小數點
 > print("Lowest: %g" % min(temperature))
 > ```
 >> **Example Output:**
