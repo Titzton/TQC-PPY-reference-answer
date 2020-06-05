@@ -142,16 +142,11 @@
 **Tips. 不區分大小寫字母**
 > **Example Input:`2`;`Bright vixens jump; dozy fowl quack`,`This sentence should return false`**  
 > ```py
-> def compute(): #使用函數撰寫 得出答案即跳出
->     user, word = input(), "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
->     for w in word:
->         if w not in user.upper(): #把輸入句子轉換大寫進行比對 如果有字母不在句子裡即回傳False
->             return False
->     return True
-> 
-> times = eval(input())
-> for i in range(times):
->     print(compute())
+> K = eval(input())
+> for i in range(K):
+>     #用.replace()把空格替換掉 轉換全小寫 再利用集合元素不重複的特性
+>     word = set(input().lower().replace(" ", "")) 
+>     print(len(word) == 26)
 > ```
 >> **Example Output:**
 >> ```
