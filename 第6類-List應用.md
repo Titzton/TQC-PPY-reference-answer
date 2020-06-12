@@ -107,14 +107,14 @@
 **題目設計要求:**  
 輸入兩個正整數rows、cols，分別表示二維串列lst 的「第一個維度大小」與「第二個維度大小」。  
 串列元素\[row]\[col]所儲存的數字，其規則為：row、col 的交點值 = 第二個維度的索引col – 第一個維度的索引row。
-接著以該串列作為參數呼叫函式compute()輸出串列。
+接著以該串列作為參數呼叫函式compute()輸出串列。  
 **Tips. 欄寬為4**
 > **Example Input:`4`,`7`**  
 > ```py
 > def compute(rows, cols):
->     for i in range(rows):
->         for j in range(cols):
->             print("%4d" % (j-i), end="")
+>     for r in range(rows):
+>         for c in range(cols):
+>             print("%4d" % (c-r), end="")
 >         print()
 >         
 > compute(eval(input()), eval(input()))
@@ -164,7 +164,7 @@
 ## 608. 最大最小值索引
 **題目設計要求:**  
 建立一個3*3的矩陣，其內容為從鍵盤輸入的整數（不重複），接著輸出矩陣最大值與最小值的索引。
-> **Example Input:`11`,`32`,`77`,`46` ,`29`,`61`,`59`,`-9`,`42`**  
+> **Example Input:`11`,`32`,`77`,`46`,`29`,`61`,`59`,`-9`,`42`**  
 > ```py
 > N = []
 > for i in range(9):

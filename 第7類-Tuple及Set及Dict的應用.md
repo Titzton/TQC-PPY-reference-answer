@@ -71,7 +71,7 @@
 >     N += (tmp,)
 > print(N)
 > print(N[:3]) #印出0,1,2的元素
-> print(N[len(N)-3:]) #印出(tuple長度-3)到最後一個元素
+> print(N[-3:]) #印出(tuple長度-3)到最後一個元素
 > ```
 >> **Example Output:**
 >> ```
@@ -106,7 +106,8 @@
 
 ## 705. 子集合與超集合
 **題目設計要求:**  
-依序輸入五個、三個、九個整數，並各自儲存到集合set1、set2、set3中。接著回答：set2是否為set1的子集合（subset）？set3是否為set1的超集合（superset）？  
+依序輸入五個、三個、九個整數，並各自儲存到集合set1、set2、set3中。  
+接著回答：set2是否為set1的子集合（subset）？ set3是否為set1的超集合（superset）？  
 **Tips. 依序分別輸入五個、三個、九個整數**
 > **Example Input:`7`,`42`,`19`,`-8`,`0`;`-8`,`7`,`1`;`8`,`8`,`-8`,`0`,`66`,`42`,`77`,`19`,`48`**  
 > ```py
@@ -172,6 +173,7 @@
 >     if(sub == 'end'):
 >         break
 >     X.add(sub)
+>
 > print("Enter group Y's subjects:")
 > while(True):
 >     sub = input()
@@ -204,6 +206,7 @@
 >     if(KEY == 'end'):
 >         break
 >     dic1[KEY] = input("Value: ") #設定KEY值的value為輸入內容
+>
 > print("Create dict2:")
 > while(True):
 >     KEY = input("Key: ")
