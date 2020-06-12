@@ -52,8 +52,8 @@
 > ```
 >> **Example Output:**
 >> ```
->> Create tuple1:
->> Create tuple2:
+>> Create tuple1: **input in here**
+>> Create tuple2: **input in here**
 >> Combined tuple before sorting: (7, 3, 9, 0, -2, 42, 33, 76, -22)
 >> Combined list after sorting: [-22, -2, 0, 3, 7, 9, 33, 42, 76]
 >> ```
@@ -128,9 +128,9 @@
 > ```
 >> **Example Output:**
 >> ```
->> Input to set1:
->> Input to set2:
->> Input to set3:
+>> Input to set1: **input in here**
+>> Input to set2: **input in here**
+>> Input to set3: **input in here**
 >> set2 is subset of set1: False
 >> set3 is superset of set1: True
 >> ```
